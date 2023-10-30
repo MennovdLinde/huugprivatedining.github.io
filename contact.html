@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="font-family: HUUGFont;">
+            <div class="col-0 col-md-2"></div>
+            <ul class="nav nav-tabs mt-5 d-flex justify-content-start col-12 col-md-8 border-0" id="myTab"
+                role="tablist">
+                <li class="nav-item mx-2" id="contact-tab" role="presentation">
+                    <button class="nav-link active" id="offerte-tab" data-bs-toggle="tab" data-bs-target="#offerte"
+                        type="button" role="tab" aria-controls="offerte" aria-selected="true">Offerte aanvraag</button>
+                </li>
+                <li class="nav-item mx-2" id="contact-tab" role="presentation">
+                    <button class="nav-link" id="MenuAanvraag-tab" data-bs-toggle="tab" data-bs-target="#MenuAanvraag"
+                        type="button" role="tab" aria-controls="MenuAanvraag" aria-selected="false">Menu
+                        aanvraag</button>
+                </li>
+                <li class="nav-item mx-2" id="contact-tab" role="presentation">
+                    <button class="nav-link" id="vraag-tab" data-bs-toggle="tab" data-bs-target="#vraag" type="button"
+                        role="tab" aria-controls="vraag" aria-selected="false">Vraag</button>
+                </li>
+            </ul>
+            <div class="col-0 col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="card tab-content col-8 bg-transparent border-0" id="myTabContent">
+                <div class="tab-pane fade show active" id="offerte" role="tabpanel" aria-labelledby="offerte-tab">
+                    <form method="post" action="contact.php">
+                        <div class="form-floating my-4">
+                            <input type="number" class="form-control" id="floatingNumber" placeholder="1">
+                            <label for="floatingNumber">Aantal personen</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingLocation" placeholder="street 107 city">
+                            <label for="floatingLocation">Locatie</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="datetime-local" class="form-control" id="floatingDateTime"
+                                placeholder="09-09-2023 11:20">
+                            <label for="floatingDateTime">Tijd</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+                            style="font-family: HUUGFont;">VERSTUUR</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="MenuAanvraag" role="tabpanel" aria-labelledby="MenuAanvraag-tab">
+                    <form method="post" action="contact.php">
+                        <div class="form-floating my-4">
+                            <input type="number" class="form-control" id="floatingNumber" placeholder="1">
+                            <label for="floatingNumber">Aantal personen</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="text" class="form-control" id="floatingLocation" placeholder="street 107 city">
+                            <label for="floatingLocation">Locatie</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+                            style="font-family: HUUGFont;">VERSTUUR</button>
+                    </form>
+                </div>
+                <div class="tab-pane fade" id="vraag" role="tabpanel" aria-labelledby="vraag-tab">
+                    <form method="post" action="contact.php">
+                        <div class="form-floating my-4">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Stel uw vraag</label>
+                        </div>
+                        <div class="form-floating my-4">
+                            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                        <button type="submit" class="btn mb-4 btn-lg col-12" id="btn-verstuur"
+                            style="font-family: HUUGFont;">VERSTUUR</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

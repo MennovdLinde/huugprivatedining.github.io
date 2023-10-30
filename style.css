@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'HUUGFont';
+    src: url(font-groot/abang-webfont.woff);
+}
+
+@font-face {
+    font-family: 'HUUGFont-klein';
+    src: url(font-klein/LexendDeca-Regular.woff);
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url("wetransfer_font-en-backgrounds_2023-10-24_1757/HUUG website bg.png");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+nav {
+    z-index: 3;
+}
+
+h1,
+h2,
+h5 {
+    font-family: HUUGFont;
+}
+
+p {
+    font-family: HUUGFont-klein;
+    font-size: clamp(0.9em, 1.1vw, 1.1em);
+}
+
+#contentMask {
+    background-color: rgba(65, 75, 59, 0.9);
+    z-index: 2;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    top: 0;
+    left: 0;
+    height: 169px;
+    width: 100%;
+}
+
+#underbody {
+    margin-top: 169px;
+    z-index: 1;
+}
+
+
+#logo {
+    height: 120px;
+    width: 100%;
+    background-color: rgba(65, 75, 59, 0);
+    z-index: 1;
+}
+
+#navbar {
+    margin-top: 105px;
+    background-color: transparent;
+}
+
+.scrolled-down {
+    transform: translateY(-75%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+}
+
+#button {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 3;
+    border: none;
+    color: white;
+}
+
+#nav-tab button {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+#nav-tab button:hover,
+#nav-tab button.active {
+    border-bottom: 2px solid;
+}
+
+#card,
+#card-HUGO {
+    border-radius: 0px;
+    border: none;
+    overflow-y: auto;
+}
+
+#card-HUGO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#card-menu> :not(:last-child) {
+    border-radius: 0px;
+    height: 150px;
+    overflow: hidden;
+}
+
+#card-menu> :first-child {
+    background-color: rgba(65, 75, 59, 0.9);
+}
+
+#card img {
+    height: 56vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#card-menu :nth-child(1) img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#card-HUGO img {
+    height: 56vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#card-small img {
+    height: 100%;
+    width: 49%;
+}
+
+#contact-tab button {
+    border-color: #414B3B;
+    background-color: transparent;
+    color: white;
+    font-size: clamp(0.9em, 1.5vw, 2em);
+}
+
+#contact-tab button.active,
+#btn-verstuur {
+    border-color: #414B3B;
+    background-color: rgba(65, 75, 59, 0.9);
+    color: white;
+    border-width: 2px;
+    font-size: clamp(0.9em, 1.5vw, 2em);
+}
+
+footer {
+    background-color: rgba(65, 75, 59, 0.9);
+}
