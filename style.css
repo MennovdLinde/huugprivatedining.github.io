@@ -84,7 +84,7 @@ p {
     color: white;
     border: none;
     background-color: transparent;
-    font-size: clamp(0.8em, 1.15vw, 1.5em);
+    font-stretch: condensed;
 }
 
 #nav-tab button:hover,
