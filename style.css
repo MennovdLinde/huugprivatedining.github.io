@@ -164,7 +164,7 @@ p {
     background-color: rgba(65, 75, 59, 0.9);
     color: white;
     border-width: 2px;
-    font-size: clamp(0.9em, 1.5vw, 2em);
+    font-size: clamp(0.8em, 1.5vw, 2em);
 }
 
 footer {
