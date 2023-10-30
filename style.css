@@ -113,14 +113,15 @@ p {
     justify-content: space-around;
 }
 
-#card-menu> :not(:last-child) {
+#card-menu> :first-child {
     border-radius: 0px;
-    height: clamp(100px, 12vw, 300px);
+    height: clamp(120px, 12vw, 300px);
     overflow: hidden;
+    background-color: rgba(65, 75, 59, 0.9);
 }
 
-#card-menu> :first-child {
-    background-color: rgba(65, 75, 59, 0.9);
+#card-menu> :last-child {
+    height: clamp(300px, 30vw, 600px);
 }
 
 #card img {
