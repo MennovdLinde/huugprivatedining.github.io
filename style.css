@@ -142,6 +142,7 @@ p {
     background-color: transparent;
     color: white;
     font-size: clamp(0.9em, 1.5vw, 2em);
+    display: inline-block;
 }
 
 #contact-tab button.active,
