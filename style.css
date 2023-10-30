@@ -110,7 +110,7 @@ p {
 
 #card-menu> :not(:last-child) {
     border-radius: 0px;
-    height: 150px;
+    height: clamp(100px, 12vw, 300px);
     overflow: hidden;
 }
 
