@@ -146,6 +146,11 @@ p {
     width: 49%;
 }
 
+#contact-tab {
+    margin-left: clamp(5px, 1vw, 50px);
+    margin-right: clamp(5px, 1vw, 50px);
+}
+
 #contact-tab button {
     border-color: #414B3B;
     background-color: transparent;
