@@ -156,8 +156,8 @@ p {
     background-color: transparent;
     color: white;
     font-size: clamp(0.8em, 1.5vw, 2em);
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    padding-left: 0.7vw;
+    padding-right: 0.7vw;
 }
 
 #contact-tab button.active,
