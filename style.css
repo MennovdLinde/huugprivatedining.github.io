@@ -84,8 +84,8 @@ p {
     color: white;
     border: none;
     background-color: transparent;
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
+    margin-left: clamp(5px, 4vw, 100px);
+    margin-left: clamp(5px, 4vw, 100px);
 }
 
 #nav-tab button:hover,
