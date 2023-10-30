@@ -16,6 +16,11 @@ body {
     background-size: cover;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
 nav {
     z-index: 3;
 }
