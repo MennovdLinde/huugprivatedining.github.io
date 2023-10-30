@@ -84,7 +84,8 @@ p {
     color: white;
     border: none;
     background-color: transparent;
-    font-stretch: condensed;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 #nav-tab button:hover,
