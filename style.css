@@ -115,7 +115,7 @@ p {
 
 #card-menu> :first-child {
     border-radius: 0px;
-    height: clamp(120px, 12vw, 300px);
+    height: clamp(100px, 12vw, 300px);
     overflow: hidden;
     background-color: rgba(65, 75, 59, 0.9);
 }
@@ -155,7 +155,7 @@ p {
     border-color: #414B3B;
     background-color: transparent;
     color: white;
-    font-size: clamp(0.9em, 1.5vw, 2em);
+    font-size: clamp(0.8em, 1.5vw, 2em);
 }
 
 #contact-tab button.active,
