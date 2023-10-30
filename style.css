@@ -84,7 +84,6 @@ p {
     color: white;
     border: none;
     background-color: transparent;
-    display: flex;
 }
 
 #nav-tab button:hover,
