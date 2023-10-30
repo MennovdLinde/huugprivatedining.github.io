@@ -58,6 +58,7 @@ p {
 #navbar {
     margin-top: 105px;
     background-color: transparent;
+    display: inline-block;
 }
 
 .scrolled-down {
