@@ -1,1 +1,18 @@
+name: Form Submission Processing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  process_form:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run PHP Script
+      run: php contact.php
 
