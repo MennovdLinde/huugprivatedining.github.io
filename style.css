@@ -10,6 +10,7 @@
 
 body {
     overflow-y: scroll;
+    overflow-x: none;
     overflow-x: hidden;
     background-image: url("wetransfer/HUUG website bg.png");
     background-attachment: fixed;
