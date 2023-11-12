@@ -95,22 +95,18 @@ p {
     padding-right: 2vw;
 }
 
+
+
 #nav-tab button:hover,
 #nav-tab button.active {
     border-bottom: 2px solid;
 }
 
 #card,
-#card-HUGO {
+#card-small {
     border-radius: 0px;
     border: none;
     overflow-y: auto;
-}
-
-#card-HUGO {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
 
 #card-menu> :first-child {
@@ -130,20 +126,14 @@ p {
     object-fit: cover;
 }
 
-#card-menu :nth-child(1) img {
-    height: 100%;
-    object-fit: cover;
-}
-
-#card-HUGO img {
-    height: 56vh;
-    width: 100%;
-    object-fit: cover;
-}
-
 #card-small img {
     height: 100%;
     width: 49%;
+}
+
+#card-menu :nth-child(1) img {
+    height: 100%;
+    object-fit: cover;
 }
 
 #contact-tab {
@@ -155,9 +145,9 @@ p {
     border-color: #414B3B;
     background-color: transparent;
     color: white;
-    font-size: clamp(0.8em, 1.5vw, 2em);
-    padding-left: 0.7vw;
-    padding-right: 0.7vw;
+    font-size: clamp(0.9em, 1.5vw, 2em);
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 #contact-tab button.active,
@@ -166,7 +156,7 @@ p {
     background-color: rgba(65, 75, 59, 0.9);
     color: white;
     border-width: 2px;
-    font-size: clamp(0.8em, 1.5vw, 2em);
+    font-size: clamp(0.9em, 1.5vw, 2em);
 }
 
 footer {
