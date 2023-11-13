@@ -105,7 +105,8 @@ p {
 
 #card,
 #card-small,
-#card-mob {
+#card-mob,
+#card-mobE{
     border-radius: 0px;
     border: none;
     overflow-y: auto;
@@ -131,6 +132,12 @@ p {
 #card-mob img {
     height: 50vh;
     width: 100%;
+    object-fit: cover;
+}
+
+#card-mobE img {
+    height: 35vh;
+    width: 49%;
     object-fit: cover;
 }
 
