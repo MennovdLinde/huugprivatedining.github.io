@@ -145,8 +145,8 @@ p {
 }
 
 #contact-tab {
-    margin-left: clamp(3px, 0.7vw, 50px);
-    margin-right: clamp(3px, 0.7vw, 50px);
+    margin-left: clamp(2px, 0.7vw, 50px);
+    margin-right: clamp(2px, 0.7vw, 50px);
 }
 
 #contact-tab button {
