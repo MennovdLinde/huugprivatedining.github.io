@@ -135,8 +135,9 @@ p {
 }
 
 #card-small img {
-    height: 100%;
-    width: 49%;
+    height: 50vh;
+    width: 45%;
+    object-fit: cover;
 }
 
 #card-menu :nth-child(1) img {
