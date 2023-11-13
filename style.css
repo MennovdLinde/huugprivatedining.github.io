@@ -154,7 +154,7 @@ p {
     border-color: #414B3B;
     background-color: transparent;
     color: white;
-    font-size: clamp(0.9em, 1.5vw, 2em);
+    font-size: clamp(0.8em, 1.5vw, 2em);
     padding-left: 0.5vw;
     padding-right: 0.5vw;
 }
