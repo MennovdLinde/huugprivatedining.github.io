@@ -145,8 +145,8 @@ p {
 }
 
 #contact-tab {
-    margin-left: clamp(4px, 1vw, 50px);
-    margin-right: clamp(4px, 1vw, 50px);
+    margin-left: clamp(3px, 0.7vw, 50px);
+    margin-right: clamp(3px, 0.7vw, 50px);
 }
 
 #contact-tab button {
@@ -154,8 +154,8 @@ p {
     background-color: transparent;
     color: white;
     font-size: clamp(0.9em, 1.5vw, 2em);
-    padding-left: 0.4vw;
-    padding-right: 0.4vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
 #contact-tab button.active,
