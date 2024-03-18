@@ -119,11 +119,7 @@ p {
 }
 
 #card-menu> :last-child {
-    height: clamp(200px, 30vw, 600px);
-}
-
-#card-menu> :last-child img {
-    object-fit: contain;
+    height: fit-content;
 }
 
 #card img {
