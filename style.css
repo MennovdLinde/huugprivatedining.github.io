@@ -122,6 +122,10 @@ p {
     height: clamp(250px, 30vw, 600px);
 }
 
+#card-menu> :last-child img {
+    object-fit: cover;
+}
+
 #card img {
     height: 56vh;
     width: 100%;
