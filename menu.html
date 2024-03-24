@@ -2,49 +2,107 @@
 <html lang="en">
 
 <body>
-    <div class="d-flex justify-content-center row my-5">
-        <div class="d-flex pt-5 justify-content-center col-8 bg-transparent text-light text-center">
-            <p>Dit zijn de HUUG Private Dining menu's, die kunnen worden aangepast aan uw persoonlijke voorkeuren. Ze zijn bedoeld als voorbeeld om u een indruk te geven van ons culinaire niveau en prijslevel. Uiteraard passen we de menu’s in overleg graag naar uw wensen aan.</p>
+
+    <div class="container">
+        <div class="row d-flex justify-content-center" style="font-family: HUUGFont;">
+            <ul class="nav nav-tabs mb-2 mt-3 d-flex justify-content-evenly col-12 col-md-8 border-0 align-self-center" id="menu-tab"
+                role="tablist">
+                <button class="nav-link active mx-2" id="Cuisine-tab" data-bs-toggle="tab" data-bs-target="#Cuisine"
+                    type="button" role="tab" aria-controls="Cuisine" aria-selected="true">Cuisine</button>
+                <button class="nav-link mx-2" id="Dranken-tab" data-bs-toggle="tab" data-bs-target="#Dranken"
+                    type="button" role="tab" aria-controls="Dranken" aria-selected="false">Dranken</button>
+                <button class="nav-link mx-2" id="Bites-tab" data-bs-toggle="tab" data-bs-target="#Bites"
+                    type="button" role="tab" aria-controls="Bites" aria-selected="false">Bites</button>
+            </ul>
+        </div>
+
+        <div class="d-flex justify-content-center my-3">
+            <div class="d-flex justify-content-center col-12 col-md-8 bg-transparent text-light text-center">
+                <p>Dit zijn de HUUG Private Dining menu's, die kunnen worden aangepast aan uw persoonlijke
+                    voorkeuren. Ze zijn bedoeld als voorbeeld om u een indruk te geven van ons culinaire niveau en prijslevel.
+                    Uiteraard passen we de menu’s in overleg graag naar uw wensen aan.</p>
+            </div>
+        </div>
+
+        <div class="card tab-content bg-transparent border-0">
+
+            <div class="tab-pane fade show active" id="Cuisine" role="tabpanel" aria-labelledby="Cuisine-tab">
+                <div class="mb-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/favourite.png" alt="card17" class="align-self-center">
+                    </div>
+
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/favourites-menu.png" alt="card18" class="img-fluid">
+                    </div>
+                </div>
+                <div class="my-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/familie.png" alt="card19" class="align-self-center">
+                    </div>
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/familie-menu.png" alt="card20" class="img-fluid">
+                    </div>
+                </div>
+                <div class="my-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/cozy.png" alt="card21" class="align-self-center">
+                    </div>
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/cozy-menu.png" alt="card22" class="img-fluid">
+                    </div>
+                </div>
+                <div class="my-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/algemeen.png" alt="card23" class="align-self-center">
+                    </div>
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/algemeen-menu.png" alt="card24" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Dranken" role="tabpanel" aria-labelledby="Dranken-tab">
+                <div class="mb-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/Wijn.png" alt="card25" class="align-self-center">
+                    </div>
+
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/Wijn-menu.png" alt="card26" class="img-fluid">
+                    </div>
+                </div>
+                <div class="my-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/Bier.png" alt="card27" class="align-self-center">
+                    </div>
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/Bier-menu.png" alt="card28" class="img-fluid">
+                    </div>
+                </div>
+                <div class="my-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/Alcoholvrij.png" alt="card29" class="align-self-center">
+                    </div>
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/Alcoholvrij-menu.png" alt="card30" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Bites" role="tabpanel" aria-labelledby="Bites-tab">
+                <div class="mb-5" id="card-menu">
+                    <div class="card col-12">
+                        <img src="images-small/Bites.png" alt="card31" class="align-self-center">
+                    </div>
+                    <div class="col-12 bg-white d-flex justify-content-center">
+                        <img src="images-small/Bites-menu.png" alt="card31" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <div class="mb-5" id="card-menu">
-        <div class="card col-12">
-            <img src="images-small/favourite.png" alt="card17" class="align-self-center">
-        </div>
-
-        <div class="col-12 bg-white d-flex justify-content-center">
-            <img src="images-small/favourites-menu.png" alt="card18" class="img-fluid">
-        </div>
-    </div>
-
-    <div class="my-5" id="card-menu">
-        <div class="card col-12">
-            <img src="images-small/familie.png" alt="card19" class="align-self-center">
-        </div>
-        <div class="col-12 bg-white d-flex justify-content-center">
-            <img src="images-small/familie-menu.png" alt="card20" class="img-fluid">
-        </div>
-    </div>
-
-    <div class="my-5" id="card-menu">
-        <div class="card col-12">
-            <img src="images-small/cozy.png" alt="card21" class="align-self-center">
-        </div>
-        <div class="col-12 bg-white d-flex justify-content-center">
-            <img src="images-small/cozy-menu.png" alt="card22" class="img-fluid">
-        </div>
-    </div>
-
-    <div class="my-5" id="card-menu">
-        <div class="card col-12">
-            <img src="images-small/algemeen.png" alt="card23" class="align-self-center">
-        </div>
-        <div class="col-12 bg-white d-flex justify-content-center">
-            <img src="images-small/algemeen-menu.png" alt="card24" class="img-fluid">
-        </div>
-    </div>
-
 </body>
 
 </html>
