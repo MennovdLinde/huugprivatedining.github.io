@@ -157,8 +157,9 @@ p {
     background-color: transparent;
     color: white;
     width: 28%;
-    border-bottom: none;
+    border-left: none;
     border-top: none;
+    border-right: none;
     border-radius: 0px;
     border-width: 2px;
 }
