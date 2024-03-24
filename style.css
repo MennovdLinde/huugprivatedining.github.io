@@ -96,8 +96,6 @@ p {
     padding-right: 2vw;
 }
 
-
-
 #nav-tab button:hover,
 #nav-tab button.active {
     border-bottom: 2px solid;
@@ -105,7 +103,7 @@ p {
 
 #card,
 #card-small,
-#card-mob{
+#card-mob {
     border-radius: 0px;
     border: none;
     overflow-y: auto;
@@ -113,6 +111,8 @@ p {
 
 #card-menu> :first-child {
     border-radius: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     height: clamp(100px, 12vw, 300px);
     overflow: hidden;
     background-color: rgba(65, 75, 59, 0.9);
@@ -120,6 +120,9 @@ p {
 
 #card-menu> :last-child {
     height: fit-content;
+    border-radius: 0px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 #card img {
@@ -129,37 +132,37 @@ p {
 }
 
 #card-mob img {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     object-fit: cover;
 }
 
 #card-small img {
-    height: 35vh;
+    height: 50vh;
     width: 49%;
     object-fit: cover;
 }
 
 #card-menu :nth-child(1) img {
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
-#contact-tab {
-    margin-left: clamp(5px, 0.7vw, 50px);
-    margin-right: clamp(5px, 0.7vw, 50px);
+#menu-tab {
+    background-color: rgba(65, 75, 59, 0.9);
+    border-radius: 2px;
 }
 
-#contact-tab button {
-    border-color: #414B3B;
+#menu-tab button {
     background-color: transparent;
     color: white;
-    font-size: clamp(0.8em, 1.5vw, 2em);
-    padding-left: 0.5vw;
-    padding-right: 0.5vw;
+    width: 28%;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0px;
+    border-width: 2px;
 }
 
-#contact-tab button.active,
 #btn-verstuur {
     border-color: #414B3B;
     background-color: rgba(65, 75, 59, 0.9);
