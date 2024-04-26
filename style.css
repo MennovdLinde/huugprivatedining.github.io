@@ -101,6 +101,13 @@ p {
     border-bottom: 2px solid;
 }
 
+#card-review {
+    background-color: rgba(65, 75, 59, 0.9);
+    border-radius: 10px;
+    border-width: 1px;
+    height: fit-content;
+}
+
 #card,
 #card-small,
 #card-mob {
