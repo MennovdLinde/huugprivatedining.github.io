@@ -58,15 +58,11 @@ fetch('contact.html')
 });
 
 window.addEventListener("load", function () {
-  const hash = window.location.hash;
-  if (hash) {
-    const tab = new bootstrap.Tab(document.querySelector(`a[href="${hash}"]`));
-    tab.show();
-
-    // Optionally force a reflow or trigger an event to ensure styling is applied
-    const targetPane = document.querySelector(hash);
-    if (targetPane) {
-      targetPane.classList.add("show");  // Ensure the pane is visible
+  setTimeout(function () {
+    const hash = window.location.hash;
+    if (hash) {
+      const tab = new bootstrap.Tab(document.querySelector(`a[href="${hash}"]`));
+      tab.show();
     }
-  }
+  }, 100); // Delay of 100ms
 });
