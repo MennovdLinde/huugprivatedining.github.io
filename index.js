@@ -56,3 +56,11 @@ fetch('contact.html')
   .then(html => {
       document.getElementById('nav-contact').innerHTML = html;
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hash = window.location.hash;
+  if (hash) {
+    const tab = new bootstrap.Tab(document.querySelector(`a[href="${hash}"]`));
+    tab.show();
+  }
+});
