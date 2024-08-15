@@ -56,3 +56,15 @@ fetch('contact.html')
   .then(html => {
       document.getElementById('nav-contact').innerHTML = html;
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tab = urlParams.get('tab');
+
+    if (tab) {
+        const tabElement = document.getElementById(tab + '-tab');
+        if (tabElement) {
+            tabElement.click();  // Activate the tab
+        }
+    }
+});
