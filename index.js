@@ -56,13 +56,3 @@ fetch('contact.html')
   .then(html => {
       document.getElementById('nav-contact').innerHTML = html;
 });
-
-window.addEventListener("load", function () {
-  setTimeout(function () {
-    const hash = window.location.hash;
-    if (hash) {
-      const tab = new bootstrap.Tab(document.querySelector(`a[href="${hash}"]`));
-      tab.show();
-    }
-  }, 100); // Delay of 100ms
-});
