@@ -62,5 +62,11 @@ window.addEventListener("load", function () {
   if (hash) {
     const tab = new bootstrap.Tab(document.querySelector(`a[href="${hash}"]`));
     tab.show();
+
+    // Optionally force a reflow or trigger an event to ensure styling is applied
+    const targetPane = document.querySelector(hash);
+    if (targetPane) {
+      targetPane.classList.add("show");  // Ensure the pane is visible
+    }
   }
 });
