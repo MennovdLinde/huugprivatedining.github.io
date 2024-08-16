@@ -33,7 +33,7 @@ document.getElementById("logo").addEventListener("mouseover", function() {
   if (window.innerWidth > 768) {
     navDown();
   }
-  });
+});
 
 fetch('home.html')
   .then(response => response.text())
