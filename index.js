@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const hash = window.location.hash.substr(1);
-    if (hash) {
-        const tabElement = document.getElementById(hash + '-tab');
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    if (tabParam) {
+        const tabElement = document.getElementById(tabParam + '-tab');
         if (tabElement) {
-            tabElement.click();  // Activate the tab based on the hash
+            tabElement.click();  // Activate the tab based on the tab parameter
         }
     }
     
-    // Listen for changes in the URL hash
+    // Listen for changes in the URL hash (if needed)
     window.addEventListener('hashchange', function() {
         const newHash = window.location.hash.substr(1);
         const newTabElement = document.getElementById(newHash + '-tab');
