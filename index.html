@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Privé chef Maastricht</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tabParam = urlParams.get('tab');
+            if (tabParam) {
+                const tabElement = document.getElementById(tabParam + '-tab');
+                if (tabElement) {
+                    tabElement.click();  // Activate the tab based on the tab parameter
+                }
+            }
+        });
+    </script>
 </head>
 
 <body>
