@@ -1,3 +1,22 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const hash = window.location.hash.substr(1);
+    if (hash) {
+        const tabElement = document.getElementById(hash + '-tab');
+        if (tabElement) {
+            tabElement.click();  // Activate the tab based on the hash
+        }
+    }
+    
+    // Listen for changes in the URL hash
+    window.addEventListener('hashchange', function() {
+        const newHash = window.location.hash.substr(1);
+        const newTabElement = document.getElementById(newHash + '-tab');
+        if (newTabElement) {
+            newTabElement.click();  // Activate the new tab when the hash changes
+        }
+    }, false);
+});
+
 function navUp() {
   document.getElementById("navbar").classList.add("scrolled-down");
   document.getElementById("navbar").classList.remove("scrolled-up");
