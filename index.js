@@ -1,23 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const tabParam = urlParams.get('tab');
-    if (tabParam) {
-        const tabElement = document.getElementById(tabParam + '-tab');
-        if (tabElement) {
-            tabElement.click();  // Activate the tab based on the tab parameter
-        }
-    }
-    
-    // Listen for changes in the URL hash (if needed)
-    window.addEventListener('hashchange', function() {
-        const newHash = window.location.hash.substr(1);
-        const newTabElement = document.getElementById(newHash + '-tab');
-        if (newTabElement) {
-            newTabElement.click();  // Activate the new tab when the hash changes
-        }
-    }, false);
-});
-
 function navUp() {
   document.getElementById("navbar").classList.add("scrolled-down");
   document.getElementById("navbar").classList.remove("scrolled-up");
