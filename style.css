@@ -183,3 +183,8 @@ p {
 footer {
     background-color: rgba(65, 75, 59, 0.9);
 }
+
+#review {
+    height: 380px;
+}
+
