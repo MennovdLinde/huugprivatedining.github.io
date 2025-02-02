@@ -9,108 +9,283 @@
 
 <body>
 
-       <div class="container">
-        <div class="row d-flex justify-content-center" style="font-family: HUUGFont;">
-            <ul class="nav nav-tabs mb-2 mt-3 d-flex justify-content-evenly col-12 col-md-8 border-0 align-self-center" id="menu-tab"
-                role="tablist">
-                <button class="nav-link active mx-2" id="Cuisine-tab" data-bs-toggle="tab" data-bs-target="#Cuisine"
+    <div class="container">
+        <div class="row d-flex justify-content-center"
+            style="font-family: HUUGFont; padding-left: 12px; padding-right: 12px;">
+            <ul class="nav nav-tabs col-12 mt-3 d-flex border-0 align-self-center" id="menu-tab" role="tablist">
+                <button class="nav-link active" id="Cuisine-tab" data-bs-toggle="tab" data-bs-target="#Cuisine"
                     type="button" role="tab" aria-controls="Cuisine" aria-selected="true">Cuisine</button>
-                <button class="nav-link mx-2" id="Kerst-tab" data-bs-toggle="tab" data-bs-target="#Kerst"
-                    type="button" role="tab" aria-controls="Kerst" aria-selected="false">Kerst</button>
-                <button class="nav-link mx-2" id="Bites-tab" data-bs-toggle="tab" data-bs-target="#Bites"
-                    type="button" role="tab" aria-controls="Bites" aria-selected="false">Bites & Dranken</button>
+                <button class="nav-link" id="Bites-tab" data-bs-toggle="tab" data-bs-target="#Bites" type="button"
+                    role="tab" aria-controls="Bites" aria-selected="false">Bites</button>
+                <button class="nav-link" id="Dranken-tab" data-bs-toggle="tab" data-bs-target="#Dranken" type="button"
+                    role="tab" aria-controls="Dranken" aria-selected="false">Dranken</button>
+                <button class="nav-link" id="Events-tab" data-bs-toggle="tab" data-bs-target="#Events" type="button"
+                    role="tab" aria-controls="Events" aria-selected="false">Events</button>
+                <button class="nav-link" id="Feestdagen-tab" data-bs-toggle="tab" data-bs-target="#Feestdagen"
+                    type="button" role="tab" aria-controls="Feestdagen" aria-selected="false">Feestdagen</button>
             </ul>
         </div>
 
-        <div class="d-flex justify-content-center my-3">
-            <div class="d-flex justify-content-center col-12 col-md-8 bg-transparent text-light text-center">
-                <p>Dit zijn de HUUG Private Dining menu's, die kunnen worden aangepast aan uw persoonlijke
-                    voorkeuren. Ze zijn bedoeld als voorbeeld om u een indruk te geven van ons culinaire niveau en prijslevel.
-                    Uiteraard passen we de menu’s in overleg graag naar uw wensen aan.</p>
-            </div>
-        </div>
-
-        <div class="card tab-content bg-transparent border-0">
+        <div class="tab-content bg-transparent border-0">
 
             <div class="tab-pane fade show active" id="Cuisine" role="tabpanel" aria-labelledby="Cuisine-tab">
-                <div class="mb-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/familie.png" alt="card19" class="align-self-center">
+                <div class="bg-white my-3" id="voorpagina-menu">
+                    <div class="col-12 col-md-7 p-5">
+                        <h6 class="fs-2">HUUG's Cuisine</h6>
+                        <p>HUUG heeft een breed assortiment signiture dishes, all-time
+                            favourites en echte klassiekers.</p>
+                        <p>Op deze pagina staan de HUUG Private Dining menu's, die
+                            kunnen worden aangepast aan uw persoonlijke voorkeuren.
+                            Uiteraard passen we de menu’s in overleg graag naar uw
+                            wensen aan.</p>
+                        <h6 class="fs-4">HUUG's verrassingsmenu</h6>
+                        <p>Wilt u graag verrast worden? Dat kan, u bepaald het aantal
+                            gangen en HUUG bedenkt de invulling. Uiteraard wordt er
+                            rekening gehouden met (dieet)wensen en allergieën. </p>
+                        <h6 class="fs-4">HUUG's Keuzemenu</h6>
+                        <p>Houd u niet van verassingen? Ook dat kan natuurlijk, hieronder ziet
+                            u een aantal voorbeeld menu's deze inhoud is uiteraard volledig
+                            naar eigen wens in te vullen.</p>
                     </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/familie-menu.png" alt="card20" class="img-fluid">
-                    </div>
-                </div>
-                <div class="my-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/herfst.png" alt="card17" class="align-self-center">
-                    </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/herfst-menu.png" alt="card18" class="img-fluid">
-                    </div>
-                </div>
-                <div class="my-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/cozy.png" alt="card21" class="align-self-center">
-                    </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/cozy-menu.png" alt="card22" class="img-fluid">
+                    <div class="d-none d-md-flex col-5 py-3 px-4 justify-content-end">
+                        <img src="images-small/cuisine-voorpagina.png" alt="Privé chef" class="img-fluid" style="height: 75vh;">
                     </div>
                 </div>
-            </div>
+                <img src="images-small/cuisine-voorpagina-2.png" alt="Privé chef" class="img-fluid d-md-none">
+                <div class="my-3" id="voorpagina-menu" style="background-color: rgba(65, 75, 59, 0.9);">
+                    <div class="col-12 col-md-6 p-5 text-white">
+                        <p>Prijsindicatie menu's:</p>
+                        <p>3-gangen menu   €75,50 pp.</br>
+                            4-gangen menu   €85,50 pp.</br>
+                            5-gangen menu   €95,50 pp.</br>
+                            6-gangen menu   €105,50 pp.</p>
+                        <p class="pb-2">Let op: deze prijzen zijn exclusief
+                            dranken en BTW.</p>
+                        <p>HUUG's Menu's zijn altijd inclusief broodje op tafel. Bij 3-
+                            4 gangen inclusief 1 amuse, bij 5-6 gangen inclusief 2
+                            amuses.</p>
+                    </div>
+                    <div class="d-none d-md-flex col-6 p-4 justify-content-end">
+                        <img src="images-small/cuisine-voorpagina-2.png" alt="Privé chef" class="img-fluid">
+                    </div>
+                </div>
 
-            <div class="tab-pane fade" id="Kerst" role="tabpanel" aria-labelledby="Kerst-tab">
-                <div class="mb-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/kerst.png" alt="card31" class="align-self-center">
+                <div class="row my-3">
+                    <div class="col-12 col-md-6 mb-md-0 mb-3" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/familie.png" alt="card19" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/familie-menu.png" alt="card20" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/kerst-menu.png" alt="card31" class="img-fluid">
+                    <div class="col-12 col-md-6" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/favorites.png" alt="card21" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/favorites-menu.png" alt="card22" class="img-fluid">
+                        </div>
                     </div>
-                </div>
+                </div>              
             </div>
 
             <div class="tab-pane fade" id="Bites" role="tabpanel" aria-labelledby="Bites-tab">
-                <div class="mb-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/Bites.png" alt="card31" class="align-self-center">
+                <div class="bg-white my-3" id="voorpagina-menu">
+                    <div class="col-12 col-md-7 p-5">
+                        <h6 class="fs-2">HUUG's Bites</h6>
+                        <p>Heeft u iets te vieren, is er een jarig, of gewoon omdat het gezellig en
+                            lekker is? HUUG verzorgd bites op locatie voor elke gelegenheid. HUUG's
+                            bites zijn kleine ‘eenhaps’ gerechtjes welke te verkrijgen zijn in een breed
+                            assortiment. De hapjes die HUUG voor u meeneemt worden uiteraard
+                            voorafgaand aan het event besproken.</p>
+                        <p>Hieronder vind u enkele voorbeelden van HUUG's goedlopende bites.</p>
                     </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/Bites-menu.png" alt="card31" class="img-fluid">
-                    </div>
-                </div>
-                <div class="mb-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/Wijn.png" alt="card25" class="align-self-center">
-                    </div>
-
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/Wijn-menu.png" alt="card26" class="img-fluid">
+                    <div class="d-none d-md-flex col-5 py-3 px-4 justify-content-end">
+                        <img src="images-small/bites-voorpagina.png" alt="Privé chef" class="img-fluid" style="height: 50vh;">
                     </div>
                 </div>
-                <div class="my-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/Bier.png" alt="card27" class="align-self-center">
+                <img src="images-small/bites-voorpagina.png" alt="Privé chef" class="img-fluid d-md-none">
+                <div class="my-3" id="voorpagina-menu" style="background-color: rgba(65, 75, 59, 0.9);">
+                    <div class="d-none d-md-flex col-6 p-5">
+                        <img src="images-small/bites-voorpagina-2.png" alt="Privé chef" class="img-fluid" style="height: 50vh;">
                     </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/Bier-menu.png" alt="card28" class="img-fluid">
+                    <div class="col-12 col-md-6 py-2 px-5 text-white">
+                        <p class="fs-4">Prijzen Bites</p>
+                        <p class="fs-4">Kleine bites</p>
+                        <p style="font-size: small;">voor groepen vanaf 30 personen, kleiner in overleg
+                            inclusief servies/ disposables en bestek</p>
+                    <p style="font-size: small;">
+                        3 bites           €8.50 p.p.</br>
+                        5 bites           €11.50 p.p.</br>
+                        7 bites           €16.50 p.p.</br>
+                    </p>
+                    <p class="fs-4">Medium bites</p>
+                    <p style="font-size: small;">voor groepen vanaf 20 personen, kleiner in overleg
+                        inclusief servies/ disposables en bestek</p>
+                    <p style="font-size: small;">
+                        3 bites           €12.50 p.p.</br>
+                        5 bites           €18.50 p.p.</br>
+                        7 bites            €26.50 p.p.</br>
                     </div>
                 </div>
-                <div class="my-5" id="card-menu">
-                    <div class="card col-12">
-                        <img src="images-small/Alcoholvrij.png" alt="card29" class="align-self-center">
+                
+                <div class="col-12 my-3" id="card-menu">
+                    <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                        <img src="images-small/Bites.png" alt="card19" class="align-self-center p-1">
+                        <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                            style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                            V
+                        </button>
                     </div>
-                    <div class="col-12 bg-white d-flex justify-content-center">
-                        <img src="images-small/Alcoholvrij-menu.png" alt="card30" class="img-fluid">
+                    <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                        <img src="images-small/Bites-menu.png" alt="card20" class="img-fluid">
                     </div>
                 </div>
             </div>
+
+            <div class="tab-pane fade" id="Dranken" role="tabpanel" aria-labelledby="Drank-tab">
+                <div class="bg-white my-3" id="voorpagina-menu">
+                    <div class="col-12 col-md-7 p-5">
+                        <h6 class="fs-2">HUUG's dranken</h6>
+                        <p>Een diner, borrel of feest is pas compleet met een passend dranken
+                            aanbod! Dit hoeft heus niet altijd uit alcoholhoudende dranken te
+                            bestaan. HUUG biedt bijvoorbeeld ook 0.0% arrangement. Daarnaast zijn
+                            ook (virgin) cocktails beschikbaar die aangepast kunnen worden aan het
+                            menu of voor de gelegenheid.</p>
+                        <p>Alle dranken worden geserveerd inclusief bijbehorend glaswerk.</p>
+                    </div>
+                    <div class="d-none d-md-flex col-5 py-3 px-4 justify-content-end">
+                        <img src="images-small/dranken-voorpagina.png" alt="Privé chef" class="img-fluid" style="height: 50vh;">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 col-md-6 mb-md-0 mb-3" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/Wijn.png" alt="card21" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/Wijn-menu.png" alt="card22" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/Bier.png" alt="card19" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/Bier-menu.png" alt="card20" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row my-3">
+                    <div class="col-12 col-md-6" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/Alcoholvrij.png" alt="card21" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/Alcoholvrij-menu.png" alt="card22" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Events" role="tabpanel" aria-labelledby="Events-tab">
+                <div class="bg-white my-3" id="voorpagina-menu">
+                    <div class="col-12 col-md-7 p-4">
+                        <h6 class="fs-2">HUUG's Events</h6>
+                        <p>Binnenkort een event te organiseren maar geen idee waar te
+                            beginnen? HUUG helpt u, HUUG heeft alle nodige materialen en
+                            kennis tot zijn beschikking om uw event tot een succesvol en
+                            geslaagd event te maken.</p>
+                        <p>Naast koken vindt HUUG het het allerleukst om zijn gasten een totaal
+                            ervaring te laten beleven. HUUG zegt het altijd maar zo “natuurlijk is
+                            het eten belangrijk, maar als u op een mooie stoel zit, aan een
+                            prachtig gedekte tafel en met sfeervolle achtergrond muziek dan pas
+                            is het af”. </p>
+                        <p>Het gaat dus om het totaal plaatje. Van het begin tot het einde
+                            begeleid HUUG de organisatie van het event. Benieuwd naar de
+                            mogelijkheden? neem vrijblijvend contact op met HUUG en stel hem
+                            uw vragen.</p>
+                    </div>
+                    <div class="d-none d-md-flex col-5 p-4 justify-content-end">
+                        <img src="images-small/events-voorpagina.png" alt="Privé chef" class="img-fluid" style="height: 50vh;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="Feestdagen" role="tabpanel" aria-labelledby="Feestdagen-tab">
+                <div class="bg-white my-3" id="voorpagina-menu">
+                    <div class="col-12 col-md-7 p-5">
+                        <h6 class="fs-2">HUUG's Feestdagen</h6>
+                        <p>Of HUUG ook diners verzorgd tijdens de Feestdagen? Natuurlijk doet
+                            hij dat! Zelfs nog met een speciaal menu ook. Van Sinterklaas tot
+                            Kerstmis en Pasen, op HUUG kunt u met de feestdagen rekenen. </p>
+                        <p>Bekijk hieronder de actuele feestdagen menu's van HUUG met de
+                            bijbehorende prijsindicatie. </p>
+                        
+                    </div>
+                    <div class="d-none d-md-flex col-5 p-4 justify-content-end">
+                        <img src="images-small/feestdagen-voorpagina.png" alt="Privé chef" class="img-fluid" style="height: 50vh;">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-12 col-md-6 mb-md-0 mb-3" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/kerst.png" alt="card19" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/kerst-menu.png" alt="card20" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" id="card-menu">
+                        <div class="toggle-header d-flex align-items-center justify-content-between" style="cursor: pointer;">
+                            <img src="images-small/herfst.png" alt="card21" class="align-self-center p-1">
+                            <button class="toggle-btn border-0 bg-transparent fs-4 me-2 text-white"
+                                style="transform: rotate(0deg); transition: transform 0.3s ease; font-weight: 500;">
+                                V
+                            </button>
+                        </div>
+                        <div class="content bg-white" style="max-height: 0; overflow: hidden; text-align: center;">
+                            <img src="images-small/favorites-menu.png" alt="card22" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
 
         </div>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+        document.addEventListener("DOMContentLoaded", function () {
             const hash = window.location.hash.substr(1);
             if (hash) {
                 const tabElement = document.getElementById(hash + '-tab');

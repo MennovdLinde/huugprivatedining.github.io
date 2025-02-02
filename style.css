@@ -37,6 +37,10 @@ p {
     font-size: clamp(0.9em, 1.1vw, 1.1em);
 }
 
+h6 {
+    font-family: HUUGFont-klein;
+}
+
 #contentMask {
     background-color: rgba(65, 75, 59, 0.9);
     z-index: 2;
@@ -51,6 +55,7 @@ p {
 #underbody {
     margin-top: 169px;
     z-index: 1;
+    width: 100%;
 }
 
 
@@ -116,22 +121,6 @@ p {
     overflow-y: auto;
 }
 
-#card-menu> :first-child {
-    border-radius: 0px;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    height: clamp(100px, 12vw, 300px);
-    overflow: hidden;
-    background-color: rgba(65, 75, 59, 0.9);
-}
-
-#card-menu> :last-child {
-    height: fit-content;
-    border-radius: 0px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-}
-
 #card img {
     height: 56vh;
     width: 100%;
@@ -150,26 +139,64 @@ p {
     object-fit: cover;
 }
 
-#card-menu :nth-child(1) img {
-    height: 100%;
-    object-fit: contain;
-    width: 95%;
-}
-
 #menu-tab {
     background-color: rgba(65, 75, 59, 0.9);
     border-radius: 2px;
+    flex-wrap: nowrap;
 }
 
 #menu-tab button {
     background-color: transparent;
     color: white;
-    width: 28%;
+    width: clamp(100px, 16vw, 300px);
     border-left: none;
     border-top: none;
     border-right: none;
     border-radius: 0px;
     border-width: 2px;
+    font-size: clamp(0.8em, 1.2vw, 1.5em);
+}
+
+#card-menu> :first-child {
+    border-radius: 0px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: clamp(100px, 10vw, 200px);
+    overflow: hidden;
+    background-color: rgba(65, 75, 59, 0.9);
+}
+
+#voorpagina-menu {
+    width: 100%;
+    height: fit-content;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+}
+
+#card-menu> :last-child {
+    height: fit-content;
+    border-radius: 0px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#card-menu :nth-child(1) img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0;
+}
+
+.content.show {
+    max-height: 1000px; /* Large value to ensure full expansion */
+    padding: 15px; /* Add padding to avoid a collapsed appearance */
 }
 
 #btn-verstuur {
@@ -187,4 +214,3 @@ footer {
 #review {
     height: 400px;
 }
-
