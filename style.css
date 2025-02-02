@@ -150,13 +150,12 @@ h6 {
 #contact-tab button {
     background-color: transparent;
     color: white;
-    width: clamp(100px, 16vw, 300px);
+    width: auto;
     border-left: none;
     border-top: none;
     border-right: none;
     border-radius: 0px;
     border-width: 2px;
-    font-size: clamp(0.8em, 1.2vw, 1.5em);
 }
 
 @media (max-width: 768px) {
