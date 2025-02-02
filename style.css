@@ -139,13 +139,15 @@ h6 {
     object-fit: cover;
 }
 
-#menu-tab {
+#menu-tab,
+#contact-tab {
     background-color: rgba(65, 75, 59, 0.9);
     border-radius: 2px;
     flex-wrap: nowrap;
 }
 
-#menu-tab button {
+#menu-tab button,
+#contact-tab button {
     background-color: transparent;
     color: white;
     width: clamp(100px, 16vw, 300px);
