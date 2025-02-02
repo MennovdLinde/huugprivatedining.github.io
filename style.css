@@ -157,11 +157,30 @@ h6 {
     font-size: clamp(0.8em, 1.2vw, 1.5em);
 }
 
+@media (max-width: 768px) {
+    #menu-tab {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #menu-tab button {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
 #card-menu> :first-child {
     border-radius: 0px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    height: clamp(100px, 10vw, 200px);
+    height: clamp(120px, 10vw, 200px);
     overflow: hidden;
     background-color: rgba(65, 75, 59, 0.9);
 }
@@ -184,7 +203,7 @@ h6 {
 #card-menu :nth-child(1) img {
     height: 100%;
     object-fit: contain;
-    width: 80%;
+    width: 90%;
 }
 
 .content {
