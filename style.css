@@ -38,7 +38,7 @@ h3 {
     color: white;
     letter-spacing: 1px;
     white-space: nowrap;
-    font-size: clamp(0.9em, 1.1vw, 1.1em);
+    font-size: clamp(0.5em, 1.1vw, 1.1em);
 }
 
 h1,
@@ -80,7 +80,6 @@ p {
 #navbar {
     margin-top: 105px;
     background-color: transparent;
-    white-space: nowrap;
 }
 
 .scrolled-down {
@@ -116,6 +115,13 @@ p {
 #nav-tab button:hover,
 #nav-tab button.active {
     border-bottom: 2px solid;
+}
+
+@media (max-width: 768px) {
+    #nav-tab {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 #card-review {
