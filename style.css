@@ -28,17 +28,27 @@ nav {
 
 h1,
 h2,
-h5 {
-    font-family: HUUGFont;
+h3,
+h5,
+h6 {
+    font-family: HUUGFont-klein;
+}
+
+h3 {
+    color: white;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
 }
 
 p {
     font-family: HUUGFont-klein;
     font-size: clamp(0.9em, 1.1vw, 1.1em);
-}
-
-h6 {
-    font-family: HUUGFont-klein;
 }
 
 #contentMask {
@@ -205,7 +215,6 @@ h6 {
 #card-menu :nth-child(1) img {
     height: 100%;
     object-fit: contain;
-    width: 90%;
 }
 
 .content {
