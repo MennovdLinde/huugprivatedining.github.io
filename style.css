@@ -38,7 +38,7 @@ h3 {
     color: white;
     letter-spacing: 1px;
     white-space: nowrap;
-    font-size: clamp(1.2em, 1.8vw, 2.5em);
+    font-size: clamp(1.1em, 1.8vw, 2.5em);
 }
 
 h1,
